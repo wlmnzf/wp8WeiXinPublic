@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="weixin.allPeople" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAgAQBAAAAEAAAAAAAA=</HashCode>
+      <FileName>allPeople.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.AllPeopleInfo" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAIAAAAAAIUAAAAAAAAAAAAAUAEAAAI=</HashCode>
+      <FileName>AllPeopleInfo.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.App" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAgCSAIAAAAhAAAAAgAAAAAAAAAEQAAAAAAAIIAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.DirectoryEntry" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgACAAAAoBAAAAAAAAQAgAAACAQAAACAAAAACAA=</HashCode>
+      <FileName>BackDownLoad\DirectoryEntry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.IsolatedStorageHelper" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAAAAAAA=</HashCode>
+      <FileName>BackDownLoad\IsolatedStorageHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.LeftImageConveter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conventer\ImageConveter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="weixin.RightImageConveter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conventer\ImageConveter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="weixin.TextConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Conventer\TextConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="weixin.HomePage" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAEAEAAAAAAAA=</HashCode>
+      <FileName>HomePage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.HomePage111" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAQAAAAAAAAAEAEAAAAAAAA=</HashCode>
+      <FileName>HomePage111.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.LocalizedStrings" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>LocalizedStrings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.AllPeoPle&lt;T&gt;" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>LongListSelector\AllPeoPle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.AlphaKeyGroup&lt;T&gt;" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAIAAQAAAAAAAEACAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>LongListSelector\Inf.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.talkMessage&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>LongListSelector\talkMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.PersonMessage" Collapsed="true">
+    <Position X="14.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAACAAgAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>LongListSelector\talkMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.PersonMessages" Collapsed="true">
+    <Position X="16.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>LongListSelector\talkMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.MainPage" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAgAAAAAAgAAAARAAAUAAEiAQACAAQEQACAAgAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.NewMessage" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAQAABwAQBAAIAEAAAAkAAA=</HashCode>
+      <FileName>NewMessage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.GetIco" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAgAAA=</HashCode>
+      <FileName>other\GetIco.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.Global" Collapsed="true">
+    <Position X="16.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABJAEAgCAAACQgBBAAAAQQAAAACEwAAJAAgAAABAACg=</HashCode>
+      <FileName>other\Global.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.loginInfo" Collapsed="true">
+    <Position X="14.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAQAAAAAAAAAAkAAQABEAABAAA=</HashCode>
+      <FileName>other\PersonalInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.showhtml" Collapsed="true">
+    <Position X="13" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>other\showhtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.smallHttp" Collapsed="true">
+    <Position X="16.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAEAAAAAAAAAAAABAAAAAAAAAIAAAAAAgAgQAgAAA=</HashCode>
+      <FileName>other\smallHttp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.smallPost" Collapsed="true">
+    <Position X="6" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAEAAAABCAAEAAAEAAAAAAAAAIABAAAAQEgAAAAAA=</HashCode>
+      <FileName>other\smallPost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.Sto" Collapsed="true">
+    <Position X="7.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEgAAAAAAAEAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>other\Sto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.TimeStamp" Collapsed="true">
+    <Position X="14.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>other\TimeStamp.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.Weixin" Collapsed="true">
+    <Position X="16.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCEEAAAAJAAAEBAQAAEAAAAAAAIABIEUAwEgQAAAAA=</HashCode>
+      <FileName>other\Weixin.HttpOperater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.showweb" Collapsed="true">
+    <Position X="14.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>showweb.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.MessageCollection" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAIAAAAAAAAAAoAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SQLCE\MessageCollection.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="weixin.MessageTable" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEEAAAAAAgCAAIAAEAIAAgABkAgAAAGACAACACAgAQA=</HashCode>
+      <FileName>SQLCE\MessageTable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="weixin.WeixinDataContext" Collapsed="true">
+    <Position X="6" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAQAAAAA=</HashCode>
+      <FileName>SQLCE\WeixinDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.TalkPage" Collapsed="true">
+    <Position X="11.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAkAIAEACMAEAAAAIAAISCAAgAAAQIAAEAIAAAAAI=</HashCode>
+      <FileName>TalkPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.MD5CryptoServiceProvider" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>test\MD5Create.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.MD5" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBACCBAgACJCAQAAhECEQAQAIABAAFAEAABgXGBEAAE=</HashCode>
+      <FileName>test\MD5Create.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="weixin.post" Collapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAABAAAAAIAAABACAAAAAAAAIAAA=</HashCode>
+      <FileName>test\post.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.PostClient" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAIAAAAAAAAAAAAgAAAQIgAAAAAA=</HashCode>
+      <FileName>test\PostClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.DownloadStringCompletedEventArgs" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAQAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>test\PostClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.WeiXinRetInfo" Collapsed="true">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>test\WeiXinRetInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.CustListBox" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Themes\CustListBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.CustListbox" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAgAABAAAAEAAAAAAAABEABAAAAAEAAQIAQAAA=</HashCode>
+      <FileName>Themes\CustListbox.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.NegativeValueConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Themes\NegativeValueConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="weixin.PullDownToRefreshPanel" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAEAAgAgBiBQAAIAAEAGAAAwEAABgwgAAAAwAAEACAA=</HashCode>
+      <FileName>Themes\PullDownToRefreshPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.Resources.AppResources" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgCAAAAAAABEIAAAQAAAAAAAAAAAAIAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.ServiceReference1.getMobileCodeInfoCompletedEventArgs" Collapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\ServiceReference1\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.ServiceReference1.getDatabaseInfoCompletedEventArgs" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\ServiceReference1\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="weixin.ServiceReference1.MobileCodeWSSoapClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BCIADiIIAAAUICI4ACCgACwAAYwAAASEAEAAIAACgAA=</HashCode>
+      <FileName>Service References\ServiceReference1\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="weixin.ServiceReference1.MobileCodeWSSoap" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAkAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\ServiceReference1\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="weixin.ServiceReference1.MobileCodeWSSoapChannel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\ServiceReference1\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="weixin.FileTypes" Collapsed="true">
+    <Position X="6" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAABg=</HashCode>
+      <FileName>BackDownLoad\DirectoryEntry.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,997 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C88688C-0D03-4E57-8BF2-152B46A6C0E8}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>weixin</RootNamespace>
+    <AssemblyName>weixin</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>weixin_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>weixin.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="allPeople.xaml.cs">
+      <DependentUpon>allPeople.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BackDownLoad\DirectoryEntry.cs" />
+    <Compile Include="MassPost.cs" />
+    <Compile Include="other\changeTounicode.cs" />
+    <Compile Include="Conventer\TextConverter.cs" />
+    <Compile Include="Conventer\ImageConverter.cs" />
+    <Compile Include="HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LongListSelector\AllPeoPle.cs" />
+    <Compile Include="LongListSelector\talkMessage.cs" />
+    <Compile Include="other\GetIco.cs" />
+    <Compile Include="other\GetMd5.cs" />
+    <Compile Include="other\Global.cs" />
+    <Compile Include="BackDownLoad\IsolatedStorageHelper.cs" />
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="LongListSelector\Inf.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AllPeopleInfo.xaml.cs">
+      <DependentUpon>AllPeopleInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="other\ImageOpreate.cs" />
+    <Compile Include="other\PostPicture.cs" />
+    <Compile Include="other\smallPost.cs" />
+    <Compile Include="other\RichTextBoxExt.cs" />
+    <Compile Include="SelectPicturePage.xaml.cs">
+      <DependentUpon>SelectPicturePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SendGroup.xaml.cs">
+      <DependentUpon>SendGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SQLCE\TalkMessageCollection.cs" />
+    <Compile Include="SQLCE\TalkMessageTable.cs" />
+    <Compile Include="TalkPage.xaml.cs">
+      <DependentUpon>TalkPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="other\TimeStamp.cs" />
+    <Compile Include="other\smallHttp.cs" />
+    <Compile Include="SQLCE\MessageCollection.cs" />
+    <Compile Include="SQLCE\MessageTable.cs" />
+    <Compile Include="NewMessage.xaml.cs">
+      <DependentUpon>NewMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="other\Sto.cs" />
+    <Compile Include="other\PersonalInfo.cs" />
+    <Compile Include="test\post.cs" />
+    <Compile Include="test\PostClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="other\showhtml.cs" />
+    <Compile Include="showweb.xaml.cs">
+      <DependentUpon>showweb.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="test\WeiXinRetInfo.cs" />
+    <Compile Include="other\Weixin.HttpOperater.cs" />
+    <Compile Include="SQLCE\WeixinDataContext.cs" />
+    <Compile Include="Themes\CustListBox.cs" />
+    <Compile Include="Themes\CustListbox.xaml.cs" />
+    <Compile Include="Themes\NegativeValueConverter.cs" />
+    <Compile Include="Themes\PullDownToRefreshPanel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="allPeople.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NewMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AllPeopleInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SelectPicturePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SendGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TalkPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="showweb.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\CustListbox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="design\emotions\emoji.txt" />
+    <Content Include="design\emotions\emoji\bells_01_01.png" />
+    <Content Include="design\emotions\emoji\bells_01_02.png" />
+    <Content Include="design\emotions\emoji\bells_01_03.png" />
+    <Content Include="design\emotions\emoji\bells_01_04.png" />
+    <Content Include="design\emotions\emoji\bells_01_05.png" />
+    <Content Include="design\emotions\emoji\bells_01_06.png" />
+    <Content Include="design\emotions\emoji\bells_01_07.png" />
+    <Content Include="design\emotions\emoji\bells_01_08.png" />
+    <Content Include="design\emotions\emoji\bells_01_09.png" />
+    <Content Include="design\emotions\emoji\bells_01_10.png" />
+    <Content Include="design\emotions\emoji\bells_01_11.png" />
+    <Content Include="design\emotions\emoji\bells_02_01.png" />
+    <Content Include="design\emotions\emoji\bells_02_02.png" />
+    <Content Include="design\emotions\emoji\bells_02_03.png" />
+    <Content Include="design\emotions\emoji\bells_02_04.png" />
+    <Content Include="design\emotions\emoji\bells_02_05.png" />
+    <Content Include="design\emotions\emoji\bells_02_06.png" />
+    <Content Include="design\emotions\emoji\bells_02_07.png" />
+    <Content Include="design\emotions\emoji\bells_02_08.png" />
+    <Content Include="design\emotions\emoji\bells_02_09.png" />
+    <Content Include="design\emotions\emoji\bells_02_10.png" />
+    <Content Include="design\emotions\emoji\bells_02_11.png" />
+    <Content Include="design\emotions\emoji\bells_03_01.png" />
+    <Content Include="design\emotions\emoji\bells_03_02.png" />
+    <Content Include="design\emotions\emoji\bells_03_03.png" />
+    <Content Include="design\emotions\emoji\bells_03_04.png" />
+    <Content Include="design\emotions\emoji\bells_03_05.png" />
+    <Content Include="design\emotions\emoji\bells_03_06.png" />
+    <Content Include="design\emotions\emoji\bells_03_07.png" />
+    <Content Include="design\emotions\emoji\bells_03_08.png" />
+    <Content Include="design\emotions\emoji\bells_03_09.png" />
+    <Content Include="design\emotions\emoji\bells_03_10.png" />
+    <Content Include="design\emotions\emoji\bells_03_11.png" />
+    <Content Include="design\emotions\emoji\bells_04_01.png" />
+    <Content Include="design\emotions\emoji\bells_04_02.png" />
+    <Content Include="design\emotions\emoji\bells_04_03.png" />
+    <Content Include="design\emotions\emoji\bells_04_04.png" />
+    <Content Include="design\emotions\emoji\bells_04_05.png" />
+    <Content Include="design\emotions\emoji\bells_04_06.png" />
+    <Content Include="design\emotions\emoji\bells_04_07.png" />
+    <Content Include="design\emotions\emoji\bells_04_08.png" />
+    <Content Include="design\emotions\emoji\bells_04_09.png" />
+    <Content Include="design\emotions\emoji\bells_04_10.png" />
+    <Content Include="design\emotions\emoji\bells_04_11.png" />
+    <Content Include="design\emotions\emoji\bells_05_01.png" />
+    <Content Include="design\emotions\emoji\bells_05_02.png" />
+    <Content Include="design\emotions\emoji\bells_05_03.png" />
+    <Content Include="design\emotions\emoji\bells_05_04.png" />
+    <Content Include="design\emotions\emoji\bells_05_05.png" />
+    <Content Include="design\emotions\emoji\bells_05_06.png" />
+    <Content Include="design\emotions\emoji\bells_05_07.png" />
+    <Content Include="design\emotions\emoji\bells_05_08.png" />
+    <Content Include="design\emotions\emoji\bells_05_09.png" />
+    <Content Include="design\emotions\emoji\bells_05_10.png" />
+    <Content Include="design\emotions\emoji\bells_05_11.png" />
+    <Content Include="design\emotions\emoji\bells_06_01.png" />
+    <Content Include="design\emotions\emoji\bells_06_02.png" />
+    <Content Include="design\emotions\emoji\bells_06_03.png" />
+    <Content Include="design\emotions\emoji\bells_06_04.png" />
+    <Content Include="design\emotions\emoji\bells_06_05.png" />
+    <Content Include="design\emotions\emoji\bells_06_06.png" />
+    <Content Include="design\emotions\emoji\bells_06_07.png" />
+    <Content Include="design\emotions\emoji\bells_06_08.png" />
+    <Content Include="design\emotions\emoji\bells_06_09.png" />
+    <Content Include="design\emotions\emoji\bells_06_10.png" />
+    <Content Include="design\emotions\emoji\bells_06_11.png" />
+    <Content Include="design\emotions\emoji\bells_07_01.png" />
+    <Content Include="design\emotions\emoji\bells_07_02.png" />
+    <Content Include="design\emotions\emoji\bells_07_03.png" />
+    <Content Include="design\emotions\emoji\bells_07_04.png" />
+    <Content Include="design\emotions\emoji\bells_07_05.png" />
+    <Content Include="design\emotions\emoji\bells_07_06.png" />
+    <Content Include="design\emotions\emoji\bells_07_07.png" />
+    <Content Include="design\emotions\emoji\bells_07_08.png" />
+    <Content Include="design\emotions\emoji\bells_07_09.png" />
+    <Content Include="design\emotions\emoji\bells_07_10.png" />
+    <Content Include="design\emotions\emoji\bells_07_11.png" />
+    <Content Include="design\emotions\emoji\bells_08_01.png" />
+    <Content Include="design\emotions\emoji\bells_08_02.png" />
+    <Content Include="design\emotions\emoji\bells_08_03.png" />
+    <Content Include="design\emotions\emoji\bells_08_04.png" />
+    <Content Include="design\emotions\emoji\bells_08_05.png" />
+    <Content Include="design\emotions\emoji\bells_08_06.png" />
+    <Content Include="design\emotions\emoji\bells_08_07.png" />
+    <Content Include="design\emotions\emoji\bells_08_08.png" />
+    <Content Include="design\emotions\emoji\bells_08_09.png" />
+    <Content Include="design\emotions\emoji\bells_08_10.png" />
+    <Content Include="design\emotions\emoji\bells_08_11.png" />
+    <Content Include="design\emotions\emoji\bells_09_01.png" />
+    <Content Include="design\emotions\emoji\bells_09_02.png" />
+    <Content Include="design\emotions\emoji\bells_09_03.png" />
+    <Content Include="design\emotions\emoji\bells_09_04.png" />
+    <Content Include="design\emotions\emoji\bells_09_05.png" />
+    <Content Include="design\emotions\emoji\bells_09_06.png" />
+    <Content Include="design\emotions\emoji\bells_09_07.png" />
+    <Content Include="design\emotions\emoji\bells_09_08.png" />
+    <Content Include="design\emotions\emoji\bells_09_09.png" />
+    <Content Include="design\emotions\emoji\bells_09_10.png" />
+    <Content Include="design\emotions\emoji\bells_09_11.png" />
+    <Content Include="design\emotions\emoji\bells_10_01.png" />
+    <Content Include="design\emotions\emoji\bells_10_02.png" />
+    <Content Include="design\emotions\emoji\bells_10_03.png" />
+    <Content Include="design\emotions\emoji\bells_10_04.png" />
+    <Content Include="design\emotions\emoji\bells_10_05.png" />
+    <Content Include="design\emotions\emoji\bells_10_06.png" />
+    <Content Include="design\emotions\emoji\bells_10_07.png" />
+    <Content Include="design\emotions\emoji\bells_10_08.png" />
+    <Content Include="design\emotions\emoji\bells_10_09.png" />
+    <Content Include="design\emotions\emoji\bells_10_10.png" />
+    <Content Include="design\emotions\emoji\bells_10_11.png" />
+    <Content Include="design\emotions\emoji\bells_11_01.png" />
+    <Content Include="design\emotions\emoji\bells_11_02.png" />
+    <Content Include="design\emotions\emoji\bells_11_03.png" />
+    <Content Include="design\emotions\emoji\bells_11_04.png" />
+    <Content Include="design\emotions\emoji\bells_11_05.png" />
+    <Content Include="design\emotions\emoji\bells_11_06.png" />
+    <Content Include="design\emotions\emoji\bells_11_07.png" />
+    <Content Include="design\emotions\emoji\bells_11_08.png" />
+    <Content Include="design\emotions\emoji\bells_11_09.png" />
+    <Content Include="design\emotions\emoji\bells_11_10.png" />
+    <Content Include="design\emotions\emoji\bells_11_11.png" />
+    <Content Include="design\emotions\emoji\bells_12_01.png" />
+    <Content Include="design\emotions\emoji\bells_12_02.png" />
+    <Content Include="design\emotions\emoji\bells_12_03.png" />
+    <Content Include="design\emotions\emoji\bells_12_04.png" />
+    <Content Include="design\emotions\emoji\bells_12_05.png" />
+    <Content Include="design\emotions\emoji\bells_12_06.png" />
+    <Content Include="design\emotions\emoji\bells_12_07.png" />
+    <Content Include="design\emotions\emoji\bells_12_08.png" />
+    <Content Include="design\emotions\emoji\bells_12_09.png" />
+    <Content Include="design\emotions\emoji\bells_12_10.png" />
+    <Content Include="design\emotions\emoji\bells_12_11.png" />
+    <Content Include="design\emotions\emoji\bells_13_01.png" />
+    <Content Include="design\emotions\emoji\bells_13_02.png" />
+    <Content Include="design\emotions\emoji\bells_13_03.png" />
+    <Content Include="design\emotions\emoji\cars_01_01.png" />
+    <Content Include="design\emotions\emoji\cars_01_02.png" />
+    <Content Include="design\emotions\emoji\cars_01_03.png" />
+    <Content Include="design\emotions\emoji\cars_01_04.png" />
+    <Content Include="design\emotions\emoji\cars_01_05.png" />
+    <Content Include="design\emotions\emoji\cars_01_06.png" />
+    <Content Include="design\emotions\emoji\cars_01_07.png" />
+    <Content Include="design\emotions\emoji\cars_01_08.png" />
+    <Content Include="design\emotions\emoji\cars_01_09.png" />
+    <Content Include="design\emotions\emoji\cars_01_10.png" />
+    <Content Include="design\emotions\emoji\cars_01_11.png" />
+    <Content Include="design\emotions\emoji\cars_02_01.png" />
+    <Content Include="design\emotions\emoji\cars_02_02.png" />
+    <Content Include="design\emotions\emoji\cars_02_03.png" />
+    <Content Include="design\emotions\emoji\cars_02_04.png" />
+    <Content Include="design\emotions\emoji\cars_02_05.png" />
+    <Content Include="design\emotions\emoji\cars_02_06.png" />
+    <Content Include="design\emotions\emoji\cars_02_07.png" />
+    <Content Include="design\emotions\emoji\cars_02_08.png" />
+    <Content Include="design\emotions\emoji\cars_02_09.png" />
+    <Content Include="design\emotions\emoji\cars_02_10.png" />
+    <Content Include="design\emotions\emoji\cars_02_11.png" />
+    <Content Include="design\emotions\emoji\cars_03_01.png" />
+    <Content Include="design\emotions\emoji\cars_03_02.png" />
+    <Content Include="design\emotions\emoji\cars_03_03.png" />
+    <Content Include="design\emotions\emoji\cars_03_04.png" />
+    <Content Include="design\emotions\emoji\cars_03_05.png" />
+    <Content Include="design\emotions\emoji\cars_03_06.png" />
+    <Content Include="design\emotions\emoji\cars_03_07.png" />
+    <Content Include="design\emotions\emoji\cars_03_08.png" />
+    <Content Include="design\emotions\emoji\cars_03_09.png" />
+    <Content Include="design\emotions\emoji\cars_03_10.png" />
+    <Content Include="design\emotions\emoji\cars_03_11.png" />
+    <Content Include="design\emotions\emoji\cars_04_01.png" />
+    <Content Include="design\emotions\emoji\cars_04_02.png" />
+    <Content Include="design\emotions\emoji\cars_04_03.png" />
+    <Content Include="design\emotions\emoji\cars_04_04.png" />
+    <Content Include="design\emotions\emoji\cars_04_05.png" />
+    <Content Include="design\emotions\emoji\cars_04_06.png" />
+    <Content Include="design\emotions\emoji\cars_04_07.png" />
+    <Content Include="design\emotions\emoji\cars_04_08.png" />
+    <Content Include="design\emotions\emoji\cars_04_09.png" />
+    <Content Include="design\emotions\emoji\cars_04_10.png" />
+    <Content Include="design\emotions\emoji\cars_04_11.png" />
+    <Content Include="design\emotions\emoji\cars_05_01.png" />
+    <Content Include="design\emotions\emoji\cars_05_02.png" />
+    <Content Include="design\emotions\emoji\cars_05_03.png" />
+    <Content Include="design\emotions\emoji\cars_05_04.png" />
+    <Content Include="design\emotions\emoji\cars_05_05.png" />
+    <Content Include="design\emotions\emoji\cars_05_06.png" />
+    <Content Include="design\emotions\emoji\cars_05_07.png" />
+    <Content Include="design\emotions\emoji\cars_05_08.png" />
+    <Content Include="design\emotions\emoji\cars_05_09.png" />
+    <Content Include="design\emotions\emoji\cars_05_10.png" />
+    <Content Include="design\emotions\emoji\cars_05_11.png" />
+    <Content Include="design\emotions\emoji\cars_06_01.png" />
+    <Content Include="design\emotions\emoji\cars_06_02.png" />
+    <Content Include="design\emotions\emoji\cars_06_03.png" />
+    <Content Include="design\emotions\emoji\cars_06_04.png" />
+    <Content Include="design\emotions\emoji\cars_06_05.png" />
+    <Content Include="design\emotions\emoji\cars_06_06.png" />
+    <Content Include="design\emotions\emoji\cars_06_07.png" />
+    <Content Include="design\emotions\emoji\cars_06_08.png" />
+    <Content Include="design\emotions\emoji\cars_06_09.png" />
+    <Content Include="design\emotions\emoji\cars_06_10.png" />
+    <Content Include="design\emotions\emoji\cars_06_11.png" />
+    <Content Include="design\emotions\emoji\cars_07_01.png" />
+    <Content Include="design\emotions\emoji\cars_07_02.png" />
+    <Content Include="design\emotions\emoji\cars_07_03.png" />
+    <Content Include="design\emotions\emoji\flowers_01_01.png" />
+    <Content Include="design\emotions\emoji\flowers_01_02.png" />
+    <Content Include="design\emotions\emoji\flowers_01_03.png" />
+    <Content Include="design\emotions\emoji\flowers_01_04.png" />
+    <Content Include="design\emotions\emoji\flowers_01_05.png" />
+    <Content Include="design\emotions\emoji\flowers_01_06.png" />
+    <Content Include="design\emotions\emoji\flowers_01_07.png" />
+    <Content Include="design\emotions\emoji\flowers_01_08.png" />
+    <Content Include="design\emotions\emoji\flowers_01_09.png" />
+    <Content Include="design\emotions\emoji\flowers_01_10.png" />
+    <Content Include="design\emotions\emoji\flowers_01_11.png" />
+    <Content Include="design\emotions\emoji\flowers_02_01.png" />
+    <Content Include="design\emotions\emoji\flowers_02_02.png" />
+    <Content Include="design\emotions\emoji\flowers_02_03.png" />
+    <Content Include="design\emotions\emoji\flowers_02_04.png" />
+    <Content Include="design\emotions\emoji\flowers_02_05.png" />
+    <Content Include="design\emotions\emoji\flowers_02_06.png" />
+    <Content Include="design\emotions\emoji\flowers_02_07.png" />
+    <Content Include="design\emotions\emoji\flowers_02_08.png" />
+    <Content Include="design\emotions\emoji\flowers_02_09.png" />
+    <Content Include="design\emotions\emoji\flowers_02_10.png" />
+    <Content Include="design\emotions\emoji\flowers_02_11.png" />
+    <Content Include="design\emotions\emoji\flowers_03_01.png" />
+    <Content Include="design\emotions\emoji\flowers_03_02.png" />
+    <Content Include="design\emotions\emoji\flowers_03_03.png" />
+    <Content Include="design\emotions\emoji\flowers_03_04.png" />
+    <Content Include="design\emotions\emoji\flowers_03_05.png" />
+    <Content Include="design\emotions\emoji\flowers_03_06.png" />
+    <Content Include="design\emotions\emoji\flowers_03_07.png" />
+    <Content Include="design\emotions\emoji\flowers_03_08.png" />
+    <Content Include="design\emotions\emoji\flowers_03_09.png" />
+    <Content Include="design\emotions\emoji\flowers_03_10.png" />
+    <Content Include="design\emotions\emoji\flowers_03_11.png" />
+    <Content Include="design\emotions\emoji\flowers_04_01.png" />
+    <Content Include="design\emotions\emoji\flowers_04_02.png" />
+    <Content Include="design\emotions\emoji\flowers_04_03.png" />
+    <Content Include="design\emotions\emoji\flowers_04_04.png" />
+    <Content Include="design\emotions\emoji\flowers_04_05.png" />
+    <Content Include="design\emotions\emoji\flowers_04_06.png" />
+    <Content Include="design\emotions\emoji\flowers_04_07.png" />
+    <Content Include="design\emotions\emoji\flowers_04_08.png" />
+    <Content Include="design\emotions\emoji\flowers_04_09.png" />
+    <Content Include="design\emotions\emoji\flowers_04_10.png" />
+    <Content Include="design\emotions\emoji\flowers_04_11.png" />
+    <Content Include="design\emotions\emoji\flowers_05_01.png" />
+    <Content Include="design\emotions\emoji\flowers_05_02.png" />
+    <Content Include="design\emotions\emoji\flowers_05_03.png" />
+    <Content Include="design\emotions\emoji\flowers_05_04.png" />
+    <Content Include="design\emotions\emoji\flowers_05_05.png" />
+    <Content Include="design\emotions\emoji\flowers_05_06.png" />
+    <Content Include="design\emotions\emoji\flowers_05_07.png" />
+    <Content Include="design\emotions\emoji\flowers_05_08.png" />
+    <Content Include="design\emotions\emoji\flowers_05_09.png" />
+    <Content Include="design\emotions\emoji\numbers_01_01.png" />
+    <Content Include="design\emotions\emoji\numbers_01_02.png" />
+    <Content Include="design\emotions\emoji\numbers_01_03.png" />
+    <Content Include="design\emotions\emoji\numbers_01_04.png" />
+    <Content Include="design\emotions\emoji\numbers_01_05.png" />
+    <Content Include="design\emotions\emoji\numbers_01_06.png" />
+    <Content Include="design\emotions\emoji\numbers_01_07.png" />
+    <Content Include="design\emotions\emoji\numbers_01_08.png" />
+    <Content Include="design\emotions\emoji\numbers_01_09.png" />
+    <Content Include="design\emotions\emoji\numbers_01_10.png" />
+    <Content Include="design\emotions\emoji\numbers_01_11.png" />
+    <Content Include="design\emotions\emoji\numbers_02_01.png" />
+    <Content Include="design\emotions\emoji\numbers_02_02.png" />
+    <Content Include="design\emotions\emoji\numbers_02_03.png" />
+    <Content Include="design\emotions\emoji\numbers_02_04.png" />
+    <Content Include="design\emotions\emoji\numbers_02_05.png" />
+    <Content Include="design\emotions\emoji\numbers_02_06.png" />
+    <Content Include="design\emotions\emoji\numbers_02_07.png" />
+    <Content Include="design\emotions\emoji\numbers_02_08.png" />
+    <Content Include="design\emotions\emoji\numbers_02_09.png" />
+    <Content Include="design\emotions\emoji\numbers_02_10.png" />
+    <Content Include="design\emotions\emoji\numbers_02_11.png" />
+    <Content Include="design\emotions\emoji\numbers_03_01.png" />
+    <Content Include="design\emotions\emoji\numbers_03_02.png" />
+    <Content Include="design\emotions\emoji\numbers_03_03.png" />
+    <Content Include="design\emotions\emoji\numbers_03_04.png" />
+    <Content Include="design\emotions\emoji\numbers_03_05.png" />
+    <Content Include="design\emotions\emoji\numbers_03_06.png" />
+    <Content Include="design\emotions\emoji\numbers_03_07.png" />
+    <Content Include="design\emotions\emoji\numbers_03_08.png" />
+    <Content Include="design\emotions\emoji\numbers_03_09.png" />
+    <Content Include="design\emotions\emoji\numbers_03_10.png" />
+    <Content Include="design\emotions\emoji\numbers_03_11.png" />
+    <Content Include="design\emotions\emoji\numbers_04_01.png" />
+    <Content Include="design\emotions\emoji\numbers_04_02.png" />
+    <Content Include="design\emotions\emoji\numbers_04_03.png" />
+    <Content Include="design\emotions\emoji\numbers_04_04.png" />
+    <Content Include="design\emotions\emoji\numbers_04_05.png" />
+    <Content Include="design\emotions\emoji\numbers_04_06.png" />
+    <Content Include="design\emotions\emoji\numbers_04_07.png" />
+    <Content Include="design\emotions\emoji\numbers_04_08.png" />
+    <Content Include="design\emotions\emoji\numbers_04_09.png" />
+    <Content Include="design\emotions\emoji\numbers_04_10.png" />
+    <Content Include="design\emotions\emoji\numbers_04_11.png" />
+    <Content Include="design\emotions\emoji\numbers_05_01.png" />
+    <Content Include="design\emotions\emoji\numbers_05_02.png" />
+    <Content Include="design\emotions\emoji\numbers_05_03.png" />
+    <Content Include="design\emotions\emoji\numbers_05_04.png" />
+    <Content Include="design\emotions\emoji\numbers_05_05.png" />
+    <Content Include="design\emotions\emoji\numbers_05_06.png" />
+    <Content Include="design\emotions\emoji\numbers_05_07.png" />
+    <Content Include="design\emotions\emoji\numbers_05_08.png" />
+    <Content Include="design\emotions\emoji\numbers_05_09.png" />
+    <Content Include="design\emotions\emoji\numbers_05_10.png" />
+    <Content Include="design\emotions\emoji\numbers_05_11.png" />
+    <Content Include="design\emotions\emoji\numbers_06_01.png" />
+    <Content Include="design\emotions\emoji\numbers_06_02.png" />
+    <Content Include="design\emotions\emoji\numbers_06_03.png" />
+    <Content Include="design\emotions\emoji\numbers_06_04.png" />
+    <Content Include="design\emotions\emoji\numbers_06_05.png" />
+    <Content Include="design\emotions\emoji\numbers_06_06.png" />
+    <Content Include="design\emotions\emoji\numbers_06_07.png" />
+    <Content Include="design\emotions\emoji\numbers_06_08.png" />
+    <Content Include="design\emotions\emoji\numbers_06_09.png" />
+    <Content Include="design\emotions\emoji\numbers_06_10.png" />
+    <Content Include="design\emotions\emoji\numbers_06_11.png" />
+    <Content Include="design\emotions\emoji\numbers_07_01.png" />
+    <Content Include="design\emotions\emoji\numbers_07_02.png" />
+    <Content Include="design\emotions\emoji\numbers_07_03.png" />
+    <Content Include="design\emotions\emoji\numbers_07_04.png" />
+    <Content Include="design\emotions\emoji\numbers_07_05.png" />
+    <Content Include="design\emotions\emoji\numbers_07_06.png" />
+    <Content Include="design\emotions\emoji\numbers_07_07.png" />
+    <Content Include="design\emotions\emoji\numbers_07_08.png" />
+    <Content Include="design\emotions\emoji\numbers_07_09.png" />
+    <Content Include="design\emotions\emoji\numbers_07_10.png" />
+    <Content Include="design\emotions\emoji\numbers_07_11.png" />
+    <Content Include="design\emotions\emoji\numbers_08_01.png" />
+    <Content Include="design\emotions\emoji\numbers_08_02.png" />
+    <Content Include="design\emotions\emoji\numbers_08_03.png" />
+    <Content Include="design\emotions\emoji\numbers_08_04.png" />
+    <Content Include="design\emotions\emoji\numbers_08_05.png" />
+    <Content Include="design\emotions\emoji\numbers_08_06.png" />
+    <Content Include="design\emotions\emoji\numbers_08_07.png" />
+    <Content Include="design\emotions\emoji\numbers_08_08.png" />
+    <Content Include="design\emotions\emoji\numbers_08_09.png" />
+    <Content Include="design\emotions\emoji\numbers_08_10.png" />
+    <Content Include="design\emotions\emoji\numbers_08_11.png" />
+    <Content Include="design\emotions\emoji\numbers_09_01.png" />
+    <Content Include="design\emotions\emoji\numbers_09_02.png" />
+    <Content Include="design\emotions\emoji\numbers_09_03.png" />
+    <Content Include="design\emotions\emoji\numbers_09_04.png" />
+    <Content Include="design\emotions\emoji\numbers_09_05.png" />
+    <Content Include="design\emotions\emoji\numbers_09_06.png" />
+    <Content Include="design\emotions\emoji\numbers_09_07.png" />
+    <Content Include="design\emotions\emoji\numbers_09_08.png" />
+    <Content Include="design\emotions\emoji\numbers_09_09.png" />
+    <Content Include="design\emotions\emoji\numbers_09_10.png" />
+    <Content Include="design\emotions\emoji\numbers_09_11.png" />
+    <Content Include="design\emotions\emoji\numbers_10_01.png" />
+    <Content Include="design\emotions\emoji\numbers_10_02.png" />
+    <Content Include="design\emotions\emoji\smiles_01_01.png" />
+    <Content Include="design\emotions\emoji\smiles_01_02.png" />
+    <Content Include="design\emotions\emoji\smiles_01_03.png" />
+    <Content Include="design\emotions\emoji\smiles_01_04.png" />
+    <Content Include="design\emotions\emoji\smiles_01_05.png" />
+    <Content Include="design\emotions\emoji\smiles_01_06.png" />
+    <Content Include="design\emotions\emoji\smiles_01_07.png" />
+    <Content Include="design\emotions\emoji\smiles_01_08.png" />
+    <Content Include="design\emotions\emoji\smiles_01_09.png" />
+    <Content Include="design\emotions\emoji\smiles_01_10.png" />
+    <Content Include="design\emotions\emoji\smiles_01_11.png" />
+    <Content Include="design\emotions\emoji\smiles_02_01.png" />
+    <Content Include="design\emotions\emoji\smiles_02_02.png" />
+    <Content Include="design\emotions\emoji\smiles_02_03.png" />
+    <Content Include="design\emotions\emoji\smiles_02_04.png" />
+    <Content Include="design\emotions\emoji\smiles_02_05.png" />
+    <Content Include="design\emotions\emoji\smiles_02_06.png" />
+    <Content Include="design\emotions\emoji\smiles_02_07.png" />
+    <Content Include="design\emotions\emoji\smiles_02_08.png" />
+    <Content Include="design\emotions\emoji\smiles_02_09.png" />
+    <Content Include="design\emotions\emoji\smiles_02_10.png" />
+    <Content Include="design\emotions\emoji\smiles_02_11.png" />
+    <Content Include="design\emotions\emoji\smiles_03_01.png" />
+    <Content Include="design\emotions\emoji\smiles_03_02.png" />
+    <Content Include="design\emotions\emoji\smiles_03_03.png" />
+    <Content Include="design\emotions\emoji\smiles_03_04.png" />
+    <Content Include="design\emotions\emoji\smiles_03_05.png" />
+    <Content Include="design\emotions\emoji\smiles_03_06.png" />
+    <Content Include="design\emotions\emoji\smiles_03_07.png" />
+    <Content Include="design\emotions\emoji\smiles_03_08.png" />
+    <Content Include="design\emotions\emoji\smiles_03_09.png" />
+    <Content Include="design\emotions\emoji\smiles_03_10.png" />
+    <Content Include="design\emotions\emoji\smiles_03_11.png" />
+    <Content Include="design\emotions\emoji\smiles_04_01.png" />
+    <Content Include="design\emotions\emoji\smiles_04_02.png" />
+    <Content Include="design\emotions\emoji\smiles_04_03.png" />
+    <Content Include="design\emotions\emoji\smiles_04_04.png" />
+    <Content Include="design\emotions\emoji\smiles_04_05.png" />
+    <Content Include="design\emotions\emoji\smiles_04_06.png" />
+    <Content Include="design\emotions\emoji\smiles_04_07.png" />
+    <Content Include="design\emotions\emoji\smiles_04_08.png" />
+    <Content Include="design\emotions\emoji\smiles_04_09.png" />
+    <Content Include="design\emotions\emoji\smiles_04_10.png" />
+    <Content Include="design\emotions\emoji\smiles_04_11.png" />
+    <Content Include="design\emotions\emoji\smiles_05_01.png" />
+    <Content Include="design\emotions\emoji\smiles_05_02.png" />
+    <Content Include="design\emotions\emoji\smiles_05_03.png" />
+    <Content Include="design\emotions\emoji\smiles_05_04.png" />
+    <Content Include="design\emotions\emoji\smiles_05_05.png" />
+    <Content Include="design\emotions\emoji\smiles_05_06.png" />
+    <Content Include="design\emotions\emoji\smiles_05_07.png" />
+    <Content Include="design\emotions\emoji\smiles_05_08.png" />
+    <Content Include="design\emotions\emoji\smiles_05_09.png" />
+    <Content Include="design\emotions\emoji\smiles_05_10.png" />
+    <Content Include="design\emotions\emoji\smiles_05_11.png" />
+    <Content Include="design\emotions\emoji\smiles_06_01.png" />
+    <Content Include="design\emotions\emoji\smiles_06_02.png" />
+    <Content Include="design\emotions\emoji\smiles_06_03.png" />
+    <Content Include="design\emotions\emoji\smiles_06_04.png" />
+    <Content Include="design\emotions\emoji\smiles_06_05.png" />
+    <Content Include="design\emotions\emoji\smiles_06_06.png" />
+    <Content Include="design\emotions\emoji\smiles_06_07.png" />
+    <Content Include="design\emotions\emoji\smiles_06_08.png" />
+    <Content Include="design\emotions\emoji\smiles_06_09.png" />
+    <Content Include="design\emotions\emoji\smiles_06_10.png" />
+    <Content Include="design\emotions\emoji\smiles_06_11.png" />
+    <Content Include="design\emotions\emoji\smiles_07_01.png" />
+    <Content Include="design\emotions\emoji\smiles_07_02.png" />
+    <Content Include="design\emotions\emoji\smiles_07_03.png" />
+    <Content Include="design\emotions\emoji\smiles_07_04.png" />
+    <Content Include="design\emotions\emoji\smiles_07_05.png" />
+    <Content Include="design\emotions\emoji\smiles_07_06.png" />
+    <Content Include="design\emotions\emoji\smiles_07_07.png" />
+    <Content Include="design\emotions\emoji\smiles_07_08.png" />
+    <Content Include="design\emotions\emoji\smiles_07_09.png" />
+    <Content Include="design\emotions\emoji\smiles_07_10.png" />
+    <Content Include="design\emotions\emoji\smiles_07_11.png" />
+    <Content Include="design\emotions\emoji\smiles_08_01.png" />
+    <Content Include="design\emotions\emoji\smiles_08_02.png" />
+    <Content Include="design\emotions\emoji\smiles_08_03.png" />
+    <Content Include="design\emotions\emoji\smiles_08_04.png" />
+    <Content Include="design\emotions\emoji\smiles_08_05.png" />
+    <Content Include="design\emotions\emoji\smiles_08_06.png" />
+    <Content Include="design\emotions\emoji\smiles_08_07.png" />
+    <Content Include="design\emotions\emoji\smiles_08_08.png" />
+    <Content Include="design\emotions\emoji\smiles_08_09.png" />
+    <Content Include="design\emotions\emoji\smiles_08_10.png" />
+    <Content Include="design\emotions\emoji\smiles_08_11.png" />
+    <Content Include="design\emotions\emoji\smiles_09_01.png" />
+    <Content Include="design\emotions\emoji\smiles_09_02.png" />
+    <Content Include="design\emotions\emoji\smiles_09_03.png" />
+    <Content Include="design\emotions\emoji\smiles_09_04.png" />
+    <Content Include="design\emotions\emoji\smiles_09_05.png" />
+    <Content Include="design\emotions\emoji\smiles_09_06.png" />
+    <Content Include="design\emotions\emoji\smiles_09_07.png" />
+    <Content Include="design\emotions\emoji\smiles_09_08.png" />
+    <Content Include="design\emotions\emoji\smiles_09_09.png" />
+    <Content Include="design\emotions\emoji\smiles_09_10.png" />
+    <Content Include="design\emotions\emoji\smiles_09_11.png" />
+    <Content Include="design\emotions\emoji\smiles_10_01.png" />
+    <Content Include="design\emotions\emoji\smiles_10_02.png" />
+    <Content Include="design\emotions\emoji\smiles_10_03.png" />
+    <Content Include="design\emotions\emoji\smiles_10_04.png" />
+    <Content Include="design\emotions\emoji\smiles_10_05.png" />
+    <Content Include="design\emotions\emoji\smiles_10_06.png" />
+    <Content Include="design\emotions\emoji\smiles_10_07.png" />
+    <Content Include="design\emotions\emoji\smiles_10_08.png" />
+    <Content Include="design\emotions\emoji\smiles_10_09.png" />
+    <Content Include="design\emotions\emoji\smiles_10_10.png" />
+    <Content Include="design\emotions\weixin.txt" />
+    <Content Include="design\emotions\weixin\0.png" />
+    <Content Include="design\emotions\weixin\1.png" />
+    <Content Include="design\emotions\weixin\10.png" />
+    <Content Include="design\emotions\weixin\100.png" />
+    <Content Include="design\emotions\weixin\101.png" />
+    <Content Include="design\emotions\weixin\102.png" />
+    <Content Include="design\emotions\weixin\103.png" />
+    <Content Include="design\emotions\weixin\104.png" />
+    <Content Include="design\emotions\weixin\11.png" />
+    <Content Include="design\emotions\weixin\12.png" />
+    <Content Include="design\emotions\weixin\13.png" />
+    <Content Include="design\emotions\weixin\14.png" />
+    <Content Include="design\emotions\weixin\15.png" />
+    <Content Include="design\emotions\weixin\16.png" />
+    <Content Include="design\emotions\weixin\17.png" />
+    <Content Include="design\emotions\weixin\18.png" />
+    <Content Include="design\emotions\weixin\19.png" />
+    <Content Include="design\emotions\weixin\2.png" />
+    <Content Include="design\emotions\weixin\20.png" />
+    <Content Include="design\emotions\weixin\21.png" />
+    <Content Include="design\emotions\weixin\22.png" />
+    <Content Include="design\emotions\weixin\23.png" />
+    <Content Include="design\emotions\weixin\24.png" />
+    <Content Include="design\emotions\weixin\25.png" />
+    <Content Include="design\emotions\weixin\26.png" />
+    <Content Include="design\emotions\weixin\27.png" />
+    <Content Include="design\emotions\weixin\28.png" />
+    <Content Include="design\emotions\weixin\29.png" />
+    <Content Include="design\emotions\weixin\3.png" />
+    <Content Include="design\emotions\weixin\30.png" />
+    <Content Include="design\emotions\weixin\31.png" />
+    <Content Include="design\emotions\weixin\32.png" />
+    <Content Include="design\emotions\weixin\33.png" />
+    <Content Include="design\emotions\weixin\34.png" />
+    <Content Include="design\emotions\weixin\35.png" />
+    <Content Include="design\emotions\weixin\36.png" />
+    <Content Include="design\emotions\weixin\37.png" />
+    <Content Include="design\emotions\weixin\38.png" />
+    <Content Include="design\emotions\weixin\39.png" />
+    <Content Include="design\emotions\weixin\4.png" />
+    <Content Include="design\emotions\weixin\40.png" />
+    <Content Include="design\emotions\weixin\41.png" />
+    <Content Include="design\emotions\weixin\42.png" />
+    <Content Include="design\emotions\weixin\43.png" />
+    <Content Include="design\emotions\weixin\44.png" />
+    <Content Include="design\emotions\weixin\45.png" />
+    <Content Include="design\emotions\weixin\46.png" />
+    <Content Include="design\emotions\weixin\47.png" />
+    <Content Include="design\emotions\weixin\48.png" />
+    <Content Include="design\emotions\weixin\49.png" />
+    <Content Include="design\emotions\weixin\5.png" />
+    <Content Include="design\emotions\weixin\50.png" />
+    <Content Include="design\emotions\weixin\51.png" />
+    <Content Include="design\emotions\weixin\52.png" />
+    <Content Include="design\emotions\weixin\53.png" />
+    <Content Include="design\emotions\weixin\54.png" />
+    <Content Include="design\emotions\weixin\55.png" />
+    <Content Include="design\emotions\weixin\56.png" />
+    <Content Include="design\emotions\weixin\57.png" />
+    <Content Include="design\emotions\weixin\58.png" />
+    <Content Include="design\emotions\weixin\59.png" />
+    <Content Include="design\emotions\weixin\6.png" />
+    <Content Include="design\emotions\weixin\60.png" />
+    <Content Include="design\emotions\weixin\61.png" />
+    <Content Include="design\emotions\weixin\62.png" />
+    <Content Include="design\emotions\weixin\63.png" />
+    <Content Include="design\emotions\weixin\64.png" />
+    <Content Include="design\emotions\weixin\65.png" />
+    <Content Include="design\emotions\weixin\66.png" />
+    <Content Include="design\emotions\weixin\67.png" />
+    <Content Include="design\emotions\weixin\68.png" />
+    <Content Include="design\emotions\weixin\69.png" />
+    <Content Include="design\emotions\weixin\7.png" />
+    <Content Include="design\emotions\weixin\70.png" />
+    <Content Include="design\emotions\weixin\71.png" />
+    <Content Include="design\emotions\weixin\72.png" />
+    <Content Include="design\emotions\weixin\73.png" />
+    <Content Include="design\emotions\weixin\74.png" />
+    <Content Include="design\emotions\weixin\75.png" />
+    <Content Include="design\emotions\weixin\76.png" />
+    <Content Include="design\emotions\weixin\77.png" />
+    <Content Include="design\emotions\weixin\78.png" />
+    <Content Include="design\emotions\weixin\79.png" />
+    <Content Include="design\emotions\weixin\8.png" />
+    <Content Include="design\emotions\weixin\80.png" />
+    <Content Include="design\emotions\weixin\81.png" />
+    <Content Include="design\emotions\weixin\82.png" />
+    <Content Include="design\emotions\weixin\83.png" />
+    <Content Include="design\emotions\weixin\84.png" />
+    <Content Include="design\emotions\weixin\85.png" />
+    <Content Include="design\emotions\weixin\86.png" />
+    <Content Include="design\emotions\weixin\87.png" />
+    <Content Include="design\emotions\weixin\88.png" />
+    <Content Include="design\emotions\weixin\89.png" />
+    <Content Include="design\emotions\weixin\9.png" />
+    <Content Include="design\emotions\weixin\90.png" />
+    <Content Include="design\emotions\weixin\91.png" />
+    <Content Include="design\emotions\weixin\92.png" />
+    <Content Include="design\emotions\weixin\93.png" />
+    <Content Include="design\emotions\weixin\94.png" />
+    <Content Include="design\emotions\weixin\95.png" />
+    <Content Include="design\emotions\weixin\96.png" />
+    <Content Include="design\emotions\weixin\97.png" />
+    <Content Include="design\emotions\weixin\98.png" />
+    <Content Include="design\emotions\weixin\99.png" />
+    <Content Include="design\emotions\weixin\s001.png" />
+    <Content Include="design\emotions\weixin\s002.png" />
+    <Content Include="design\emotions\weixin\s003.png" />
+    <Content Include="design\emotions\weixin\s004.png" />
+    <Content Include="design\emotions\weixin\s005.png" />
+    <Content Include="design\emotions\weixin\s006.png" />
+    <Content Include="design\emotions\weixin\s007.png" />
+    <Content Include="design\emotions\weixin\s008.png" />
+    <Content Include="design\emotions\weixin\s009.png" />
+    <Content Include="design\emotions\weixin\s010.png" />
+    <Content Include="design\emotions\weixin\s011.png" />
+    <Content Include="design\emotions\weixin\s012.png" />
+    <Content Include="design\emotions\weixin\s013.png" />
+    <Content Include="design\emotions\weixin\s014.png" />
+    <Content Include="design\emotions\weixin\s015.png" />
+    <Content Include="design\emotions\weixin\s016.png" />
+    <Content Include="design\emotions\weixin\s017.png" />
+    <Content Include="design\emotions\weixin\s018.png" />
+    <Content Include="design\emotions\weixin\s019.png" />
+    <Content Include="design\emotions\weixin\s020.png" />
+    <Content Include="design\emotions\weixin\s021.png" />
+    <Content Include="design\emotions\weixin\s022.png" />
+    <Content Include="design\emotions\weixin\s023.png" />
+    <Content Include="design\emotions\weixin\s024.png" />
+    <Content Include="design\emotions\weixin\s025.png" />
+    <Content Include="design\emotions\weixin\s026.png" />
+    <Content Include="design\emotions\weixin\s027.png" />
+    <Content Include="design\emotions\weixin\s028.png" />
+    <Content Include="design\emotions\weixin\s029.png" />
+    <Content Include="design\emotions\weixin\s030.png" />
+    <Content Include="design\emotions\weixin\s031.png" />
+    <Content Include="design\emotions\weixin\s032.png" />
+    <Content Include="design\emotions\weixin\s033.png" />
+    <Content Include="design\emotions\weixin\s034.png" />
+    <Content Include="design\emotions\weixin\s035.png" />
+    <Content Include="design\emotions\weixin\s036.png" />
+    <Content Include="design\emotions\weixin\s037.png" />
+    <Content Include="design\emotions\weixin\s038.png" />
+    <Content Include="design\emotions\weixin\s039.png" />
+    <Content Include="design\emotions\weixin\s040.png" />
+    <Content Include="design\emotions\weixin\s041.png" />
+    <Content Include="design\emotions\weixin\s042.png" />
+    <Content Include="design\emotions\weixin\s043.png" />
+    <Content Include="design\emotions\weixin\s044.png" />
+    <Content Include="design\emotions\weixin\s045.png" />
+    <Content Include="design\emotions\weixin\s046.png" />
+    <Content Include="design\emotions\weixin\s047.png" />
+    <Content Include="design\emotions\weixin\s048.png" />
+    <Content Include="design\emotions\weixin\s049.png" />
+    <Content Include="design\emotions\weixin\s050.png" />
+    <Content Include="design\emotions\weixin\s051.png" />
+    <Content Include="design\emotions\weixin\s052.png" />
+    <Content Include="design\emotions\weixin\s053.png" />
+    <Content Include="design\emotions\weixin\s054.png" />
+    <Content Include="design\emotions\weixin\s055.png" />
+    <Content Include="design\emotions\weixin\s056.png" />
+    <Content Include="design\emotions\weixin\s057.png" />
+    <Content Include="design\emotions\weixin\s058.png" />
+    <Content Include="design\emotions\weixin\s059.png" />
+    <Content Include="design\emotions\weixin\s060.png" />
+    <Content Include="design\emotions\weixin\s061.png" />
+    <Content Include="design\emotions\weixin\s062.png" />
+    <Content Include="design\emotions\weixin\s063.png" />
+    <Content Include="design\emotions\weixin\s064.png" />
+    <Content Include="design\emotions\weixin\s065.png" />
+    <Content Include="design\emotions\weixin\s066.png" />
+    <Content Include="design\emotions\weixin\s067.png" />
+    <Content Include="design\emotions\weixin\s068.png" />
+    <Content Include="design\emotions\weixin\s069.png" />
+    <Content Include="design\emotions\weixin\s070.png" />
+    <Content Include="design\emotions\weixin\s071.png" />
+    <Content Include="design\emotions\weixin\s072.png" />
+    <Content Include="design\emotions\weixin\s073.png" />
+    <Content Include="design\emotions\weixin\s074.png" />
+    <Content Include="design\emotions\weixin\s075.png" />
+    <Content Include="design\emotions\weixin\s076.png" />
+    <Content Include="design\emotions\weixin\s077.png" />
+    <Content Include="design\emotions\weixin\s078.png" />
+    <Content Include="design\emotions\weixin\s079.png" />
+    <Content Include="design\emotions\weixin\s080.png" />
+    <Content Include="design\emotions\weixin\s081.png" />
+    <Content Include="design\emotions\weixin\s082.png" />
+    <Content Include="design\emotions\weixin\s083.png" />
+    <Content Include="design\emotions\weixin\s084.png" />
+    <Content Include="design\emotions\weixin\s085.png" />
+    <Content Include="design\emotions\weixin\s086.png" />
+    <Content Include="design\emotions\weixin\s087.png" />
+    <Content Include="design\emotions\weixin\s088.png" />
+    <Content Include="design\emotions\weixin\s089.png" />
+    <Content Include="design\emotions\weixin\s090.png" />
+    <Content Include="design\emotions\weixin\s091.png" />
+    <Content Include="design\emotions\weixin\s092.png" />
+    <Content Include="design\emotions\weixin\s093.png" />
+    <Content Include="design\emotions\weixin\s094.png" />
+    <Content Include="design\emotions\weixin\s095.png" />
+    <Content Include="design\emotions\weixin\s096.png" />
+    <Content Include="design\emotions\weixin\s097.png" />
+    <Content Include="design\emotions\weixin\s098.png" />
+    <Content Include="design\emotions\weixin\s099.png" />
+    <Content Include="design\emotions\weixin\s100.png" />
+    <Content Include="design\emotions\weixin\s101.png" />
+    <Content Include="design\emotions\weixin\s102.png" />
+    <Content Include="design\emotions\weixin\s103.png" />
+    <Content Include="design\emotions\weixin\s104.png" />
+    <Content Include="design\otherico\getheadimg.png" />
+    <Content Include="design\selectpicture\photo.png" />
+    <Content Include="design\selectpicture\picture.png" />
+    <Content Include="design\talkPage\upload.png" />
+    <Content Include="design\talk\button.png" />
+    <Content Include="design\talk\tlkbar.png" />
+    <Content Include="desk_ico.png" />
+    <Content Include="metro_ico.png" />
+    <Content Include="README_FIRST.txt" />
+    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+    <Content Include="weixin.png" />
+    <Content Include="weixin1.png" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceReference1\MobileCodeWS.wsdl" />
+    <Content Include="design\home\allpeople.png" />
+    <Content Include="design\home\bac.png" />
+    <Content Include="design\home\blue_above.png" />
+    <Content Include="design\home\blue_low.png" />
+    <Content Include="design\home\green.png" />
+    <Content Include="design\home\logo.png" />
+    <Content Include="design\home\newpeople.png" />
+    <Content Include="design\home\talk.png" />
+    <Content Include="design\main\logo.png" />
+    <Content Include="logo.png" />
+    <Content Include="test\ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Service References\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ServiceReference1\configuration.svcinfo" />
+    <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Service References\ServiceReference1\MobileCodeWS.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Toolkit.Controls">
+      <HintPath>..\..\..\资料\Windows phone\Coding4Fun.Toolkit (Windows Phone 8)\Coding4Fun.Toolkit.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

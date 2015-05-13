@@ -1,0 +1,104 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="weixin.NewMessage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:t="clr-namespace:weixin"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+
+    <phone:PhoneApplicationPage.Resources>
+        <DataTemplate x:Key="MessageItemTemplate">
+            <StackPanel VerticalAlignment="Top" Tag="{Binding l_fakeid}" Tap="StackPanel_Tap">
+                <Grid x:Name="Item" Tap="Item_Tap" Tag="{Binding l_fakeid}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="45"/>
+                        <RowDefinition Height="10"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="95"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image x:Name="ico"  Grid.RowSpan="2" Grid.Column="0" Height="90" Width="90" HorizontalAlignment="Left" Visibility="Visible" Source="{Binding l_imageSource}" Tag="{Binding l_fakeid}"  Tap="Image_Tap"/>
+                    <TextBlock   Grid.Row="0" Grid.Column="1"    FontWeight="Bold" Tag="{Binding l_fakeid}"  Text="{Binding l_nickname}" FontFamily="Portable User Interface"   FontSize="25"       Foreground="Black" Tap="TextBlock_Tap" />
+                    <t:RichTextBoxExt  Grid.Row="1" Grid.Column="1"         Text="{Binding l_content}" Tag="{Binding l_fakeid}"  FontFamily="Portable User Interface"  FontSize="23.3" Foreground="Black" Tap="TextBlock_Tap" Height="Auto" TextWrapping="NoWrap" />
+                    <TextBlock Grid.Row="1"  Grid.Column="2"   VerticalAlignment="Bottom" Tag="{Binding l_fakeid}"    HorizontalAlignment="Right"    FontSize="20"   Text="{Binding l_time}" FontFamily="Portable User Interface"  Foreground="Black" Tap="TextBlock_Tap" />
+                    <TextBlock Grid.Row="2" Grid.Column="0" Tag="{Binding l_fakeid}" FontFamily="Portable User Interface" Tap="TextBlock_Tap" />
+                </Grid>
+            </StackPanel>
+        </DataTemplate>
+
+
+        <DataTemplate x:Key="MessageGroupHeaderTemplate">
+            <Border Background="Transparent" Padding="0,0,0,10"   Width="800" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Border Background="#FF44B549" BorderBrush="#FF44B549" BorderThickness="2" Width="800" 
+                        Height="50" Margin="0,0,18,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <TextBlock Text="{Binding Key}" Foreground="Black" FontSize="23.3" Padding="6" 
+                       FontFamily="{StaticResource PhoneFontFamilySemiLight}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Border>
+            </Border>
+        </DataTemplate>
+
+
+        <phone:JumpListItemBackgroundConverter x:Key="BackgroundConverter"/>
+        <phone:JumpListItemForegroundConverter x:Key="ForegroundConverter"/>
+        <Style x:Key="MessageJumpListStyle" TargetType="phone:LongListSelector">
+            <Setter Property="GridCellSize"  Value="800,55"/>
+            <Setter Property="LayoutMode" Value="Grid" />
+            <Setter Property="ItemTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Border Background="Green" Width="800" Height="55" Margin="6" >
+                            <TextBlock Text="{Binding Key}" FontFamily="{StaticResource PhoneFontFamilySemiBold}" FontSize="25" Padding="6" 
+                              Foreground="{Binding Converter={StaticResource ForegroundConverter}}" VerticalAlignment="Top"/>
+                        </Border>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </phone:PhoneApplicationPage.Resources>
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="57*"/>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="398*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel 包含应用程序的名称和页标题-->
+        <Image Margin="0" Grid.RowSpan="2" OpacityMask="White" Source="/design/home/bac.png" Stretch="Fill" Grid.ColumnSpan="3"/>
+
+        <!--TitlePanel 包含应用程序的名称和页标题-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28" Grid.ColumnSpan="3"/>
+
+        <!--ContentPanel - 在此处放置其他内容-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" Grid.ColumnSpan="3"/>
+        <phone:LongListSelector
+                x:Name="longListSelector"
+               JumpListStyle="{StaticResource MessageJumpListStyle}"
+               Background="Transparent"
+               GroupHeaderTemplate="{StaticResource MessageGroupHeaderTemplate}"
+               ItemTemplate="{StaticResource MessageItemTemplate}"
+               LayoutMode="List"
+               IsGroupingEnabled="true"
+               HideEmptyGroups ="true" Margin="10,51,10,0" Grid.Row="1" FontFamily="Portable User Interface" Grid.ColumnSpan="3"/>
+        <Image HorizontalAlignment="Left" Height="96" Margin="18,0,0,0" VerticalAlignment="Top" Width="450" Grid.RowSpan="2" Source="/logo.png" Stretch="Fill" Grid.ColumnSpan="3"/>
+        <ProgressBar x:Name="pb" HorizontalAlignment="Left" Height="21" Margin="0,-3,0,0" VerticalAlignment="Top" Width="260" Grid.ColumnSpan="3" IsIndeterminate="True" Foreground="#FF0049E5" Visibility="Collapsed"/>
+    </Grid>
+
+</phone:PhoneApplicationPage>

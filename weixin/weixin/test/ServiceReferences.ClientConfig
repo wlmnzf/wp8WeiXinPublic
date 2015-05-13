@@ -1,0 +1,16 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="MobileCodeWSSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://webservice.webxml.com.cn/WebServices/MobileCodeWS.asmx"
+                binding="basicHttpBinding" bindingConfiguration="MobileCodeWSSoap"
+                contract="ServiceReference1.MobileCodeWSSoap" name="MobileCodeWSSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>
